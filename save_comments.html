@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="save_comments.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h3>Комментарии</h3>
+      <div class="chat">
+        <div class="chat-flex">
+          <div class="chat__icon">
+            <img class="icon-chat" src="example.png" alt="" />
+          </div>
+          <div class="chat__text">
+            <p class="chat__name">user</p>
+            <p class="chat__comment"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="user">
+        <div class="user__icon">
+          <label
+            >Добавьте аватар:<br />
+            <input type="text" name="" class="icon" placeholder="URL"
+          /></label>
+        </div>
+        <div class="user__name">
+          <label
+            >Ваше имя:<br />
+            <input class="name" type="text" name="name" />
+          </label>
+        </div>
+      </div>
+
+      <div class="comment">
+        <label>Напишите комментарий:</label><br />
+        <textarea
+          name="comment"
+          class="comment-input"
+          rows="10"
+          maxlength="500"
+        ></textarea>
+      </div>
+      <div id="error"></div>
+      <button class="send-btn">Отправить</button>
+    </div>
+    <script src="save_comments.js"></script>
+  </body>
+</html>
